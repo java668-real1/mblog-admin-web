@@ -68,11 +68,11 @@
               <span class="card-panel-text">最新评论</span>
             </div>
             <div>
-              <div class="item">
+              <div v-for="o in 4" :key="o" class="item">
                 <img src="http://java668.com/storage/avatars/000/000/001_240.jpg" alt="user image" class="offline">
                 <p class="message">
                   <a href="/users/13" class="name">
-                    <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2022-08-14</small>
+                    <small class="text-muted pull-right"><i class="el-icon-time"></i> 2022-08-14</small>
                     mztBang
                   </a>
                   源码地址：https://github.com/mouzt/mzt-biz-log
