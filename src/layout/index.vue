@@ -6,7 +6,6 @@
       <div :class="{'fixed-header':fixedHeader}">
         <navbar />
         <tags-view v-if="needTagsView" />
-        {{needTagsView}}
       </div>
       <app-main />
     </div>
