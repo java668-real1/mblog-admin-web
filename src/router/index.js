@@ -63,7 +63,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'list',
-        component: () => import('@/views/dashboard/index'),
+        component: () => import('@/views/mblog/channel/index'),
         name: 'channel',
         meta: { title: '栏目管理', icon: 'nested' }
       }
@@ -76,8 +76,8 @@ export const constantRoutes = [
     children: [
       {
         path: 'list',
-        component: () => import('@/views/dashboard/index'),
-        name: 'channel',
+        component: () => import('@/views/mblog/channel/index'),
+        name: 'postList',
         meta: { title: '文章管理', icon: 'el-icon-document' }
       }
     ]
@@ -89,8 +89,8 @@ export const constantRoutes = [
     children: [
       {
         path: 'list',
-        component: () => import('@/views/dashboard/index'),
-        name: 'channel',
+        component: () => import('@/views/mblog/channel/index'),
+        name: 'commentList',
         meta: { title: '评论管理', icon: 'el-icon-chat-line-round' }
       }
     ]
@@ -102,8 +102,8 @@ export const constantRoutes = [
     children: [
       {
         path: 'list',
-        component: () => import('@/views/dashboard/index'),
-        name: 'channel',
+        component: () => import('@/views/mblog/channel/index'),
+        name: 'linksList',
         meta: { title: '友情链接', icon: 'el-icon-connection' }
       }
     ]
@@ -115,8 +115,8 @@ export const constantRoutes = [
     children: [
       {
         path: 'list',
-        component: () => import('@/views/dashboard/index'),
-        name: 'channel',
+        component: () => import('@/views/mblog/channel/index'),
+        name: 'themeList',
         meta: { title: '主题管理', icon: 'theme' }
       }
     ]
@@ -131,25 +131,25 @@ export const constantRoutes = [
       {
         path: 'user',
         name: 'user',
-        component: () => import('@/views/table/index'),
+        component: () => import('@/views/mblog/channel/index'),
         meta: { title: '用户管理', icon: 'el-icon-user-solid' }
       },
       {
         path: 'role',
         name: 'role',
-        component: () => import('@/views/tree/index'),
+        component: () => import('@/views/mblog/channel/index'),
         meta: { title: '角色管理', icon: 'el-icon-lock' }
       },
       {
         path: 'menu',
         name: 'menu',
-        component: () => import('@/views/tree/index'),
+        component: () => import('@/views/mblog/channel/index'),
         meta: { title: '菜单权限管理', icon: 'tree' }
       },
       {
         path: 'options',
         name: 'options',
-        component: () => import('@/views/tree/index'),
+        component: () => import('@/views/mblog/channel/index'),
         meta: { title: '系统配置', icon: 'el-icon-setting' }
       }
     ]
