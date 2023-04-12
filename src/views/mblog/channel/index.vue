@@ -1,19 +1,19 @@
 <template>
   <div>
-    {{routerName}}
+    {{ routerName }}
   </div>
 </template>
 
 <script>
-  export default {
-    name: "index",
-    computed: {
-      routerName() {
-        const { name } = this.$route
-        return name
-      }
+export default {
+  name: 'Index',
+  computed: {
+    routerName() {
+      const { name } = this.$route
+      return name
     }
   }
+}
 </script>
 
 <style scoped>
